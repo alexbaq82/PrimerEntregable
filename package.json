@@ -1,0 +1,15 @@
+{
+  "name": "primerentregable",
+  "version": "1.0.1",
+  "description": "Primer entregable - Inscripcion a cursos",
+  "main": "InscribirCurso.js",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JohnBaquero alexbaq82@gmail.com",
+  "license": "ISC"
+}
