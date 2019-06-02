@@ -43,6 +43,7 @@ let mostrarCursos = function(){
   }
 };
 
+//mostrarCursos();
 
   module.exports = {
     cursos,

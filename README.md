@@ -1,19 +1,18 @@
-#Primer Entregable - Inscripcion a cursos
+#Bonus 1: Inscripcion a cursos (Mostrar en el navegador)
 #Autor: John Baquero
-#Fecha: 2019-05-19
+#Fecha: 2019-06-02
 
-#Historia de usuario # 1
-Objetivo: Obtener la lista de cursos ofertados por educacion continua
-Nombre: ListaCursos.js
-Ejemplo llamado: node ListaCursos.js
+#Prerequisito: 
+Ejecutar "npm install"
 
-#Historia de usuario # 2
-Objetivo: Obtener informacion de cursos ofertados por educacion continua
-Nombre: InscribirCurso.js
-Ejemplo llamado: 
+#Objetivo: Inscribir aspirante a un curso y mostrar informacion en el navegador
+#Nombre: InscribirCurso.js
+#Ejemplo llamado: 
+#Consultar la lista de cursos
+    node InscribirCurso.js consultar
+
 #Inscripción a un curso
     node InscribirCurso.js inscribir --idCurso=112 --doc=1009222982 --nombre=Tito --apellido=Lopez
-#Consultar la lista de cursos
-    node InscribirCurso.js consultar --idCurso=112 --doc=1009222982 --nombre=Tito --apellido=Lopez
 
-#Archivo salida: <cedula>_Prematricula.txt
+#Salida:
+    Ingresar "localhost:3000" en el navegador para ver los resultados de la inscripcion

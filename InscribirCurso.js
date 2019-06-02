@@ -6,8 +6,8 @@
 
 //Importacion de scripts
 const listadoCursos = require ('./ListaCursos.js');
-const fs = require('fs');
-
+const express = require('express')
+const app = express()
 
 
 //Definicion de parametros de entrada
@@ -44,14 +44,14 @@ let buscarCurso = listadoCursos.cursos.find(curso => curso.id == argv.idCurso);
 
 //Funcion para crear archivo de texto con la inscripcion
 let crearInscripcion = (argv) => {
-  inscripcion = 'FICHA DE INSCRIPCIÓN CURSO FORMACION CONTINUA ' + '\n' +
-                infoAspirante + '\n\n' + 
-                infoCurso;
+  inscripcion = '<b> FICHA DE INSCRIPCIÓN CURSO FORMACION CONTINUA </b>';
 
-  fs.writeFile(argv.cedula + '_Prematricula.txt', inscripcion, (err) => {
-    if (err) throw (err);
-      console.log('Inscripción creada exitosamente!')
-  });
+  app.get('/', function (req, res) {
+    res.send(inscripcion + '<br>' + infoAspirante + '<br>' + infoCurso)
+  })
+   
+  app.listen(3000)
+
 }
 
 //Validar la acción a ejecutar por el usuario

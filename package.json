@@ -4,6 +4,7 @@
   "description": "Primer entregable - Inscripcion a cursos",
   "main": "InscribirCurso.js",
   "dependencies": {
+    "express": "^4.17.1",
     "yargs": "^13.2.4"
   },
   "devDependencies": {},
